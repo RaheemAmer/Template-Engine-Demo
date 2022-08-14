@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>This is the title</title>
+</head>
+
+<body>
+    <h1>Welcome to User Details</h1>
+    <p><b>Name:</b>
+        <%= user.name %>
+    </p>
+    <p><b>Email:</b>
+        <%= user.email %>
+    </p>
+    <p><b>Stack:</b>
+        <%= user.stack %>
+    </p>
+    <u><b>Hubbies</b></u>
+    <% user.hubby.forEach(hubby=>{ %>
+        <li>
+            <%= hubby %>
+        </li>
+        <% })%>
+</body>
+
+</html>
